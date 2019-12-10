@@ -1,0 +1,312 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #FDFDFD;
+	display: block;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+	color: #343536;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 98%;
+	transition:0.3s ease-in-out;
+	
+}
+a:active {
+  color: #343536;
+  background-color: transparent;
+  text-decoration: none;
+}
+img {
+	max-width: 100%;
+	opacity: 1.0;
+	transition: .3s ease-in-out;
+	image-orientation: from-image;
+}
+
+.imgsz {
+	height:20%;
+	width:20%;
+	margin-top:5%;
+}
+img:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	transform: scale(0.993);
+}
+
+.big-box {
+	display:flex;
+	margin-left:15%;
+	margin-right:3%;
+	margin-top:7%;
+	height: 100%;
+	width: 100%;
+}
+.bio {
+	display:flex;
+	margin-left:15%;
+	margin-right:3%;
+	margin-top:7%;
+	align-items:center;
+	height: 100%;
+	width: 100%;
+}
+.imgcolumn1 {
+	height:20%;
+	width: calc(100%/4);
+	margin-left: 10%;
+	align-items:left;
+}
+.imgcolumn2 {
+	height:20%;
+	width: calc(100%/4);
+	margin-left: 10%;
+	align-items:left;
+}
+
+.small-box {
+	margin-left:2%;
+	display: block;
+	height: 100%;
+	width: 15%;
+    position: fixed;
+    top: calc(100%/10);
+}
+
+.column1 {
+	display: block;
+	height: 1%;
+	width: 40%;
+	margin-top:2%;
+	margin-left:1%;
+}
+
+.column2 {
+	display: block;
+	height: 10%;
+	width: 75%;
+	margin-top:1%;
+	margin-left:1%;
+	border-right: 1px solid grey;
+}
+.column3 {
+	width: 95%;
+	margin-top:2%;
+	margin-left:0%;
+}
+.column5 {
+	display: block;
+	height: 7%;
+	width: 7%;
+	margin-top:10%;
+	margin-left:1%;
+	margin-right:4%;
+}
+h1 {
+	font-family: 'Cinzel', serif;
+	font-size:100%;
+	margin-left:1%;
+	text-align: left;
+}
+p {
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.column4 {
+	display: block;
+	height: 93%;
+	width: 40%;
+	margin-top:240%;
+	margin-left:2%;
+}
+.row { 
+	width:100%;
+	margin-left: -1%;
+	margin-right: 0%;
+}	
+.big-row1 {
+	display: flex;
+	width: 100%;
+}
+.margin {
+	margin-bottom:5%;
+}
+.icon {
+	height:23%;
+	display: flex;
+}
+.big-row2 {
+	display: flex;
+	width: 100%;
+}
+.block {
+	display: flex;
+}
+#myImg {
+	border-radius: 5%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 10%;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto;
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 90%;
+	max-width: 1000px;
+	max-height:2000px;
+}
+
+
+
+.modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+.close {
+	position: fixed ;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1440px) {
+	.big-row1 {
+		display:block;
+	}
+	.big-row2 {
+			display:block;
+	}
+	.modal-content {
+		width: 100%;
+	}
+	.column1 {
+		width: 90%;
+	}
+	.column2 {
+		width: 70%;
+		margin-right:5%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	h1 {
+		font-size: 150%;
+		display: block;
+	}
+	.bio {
+		display:block;
+		margin-left:1%;
+	}
+	.column3 {
+		width: 95%;
+		margin-top:4%;
+		margin-left:2%;
+	}
+	.block {
+		display: block;
+	}
+	.big-box {
+		display:block;
+		margin-top:15%;
+		width: 100%;
+		margin-left:0%;
+	}
+	.big-row1 {
+		display:block;
+	}
+	.big-row2 {
+			display:block;
+	}
+	.small-box {
+		height: 15%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		position: static;
+		top: 0%;
+	}
+	.column1 {
+		margin-top: 25%;
+		height: 0%;
+		width: calc(100%/3);
+		
+}
+	.column2 {
+		height: 100%;
+		width: 0%;
+		margin-top:0%;
+		margin-left:0%;
+		margin-right:0%;
+		border-right: 0px;
+	}
+	.column4 {
+		height: 0%;
+		width: 0%;
+	}
+	.column5 {
+		margin-top: 30%;
+		height: 0%;
+		width: calc(100%/3);
+		height: 7%;
+		width: 7%;
+	}
+	.imgcolumn1 {
+		height:100%;
+		width: 70%;
+	}
+	.imgcolumn2 {
+		height:100%;
+		width: 70%;
+		margin-top:-50%;
+	}
+}
+/*insperation*/
+/*https://www.victorisaacalvarez.com*/
