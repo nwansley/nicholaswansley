@@ -21,17 +21,17 @@ function playMusic() {
 function enlargeImg1() {
 	modal.style.display = "block";
 	modalImg.src = "images/sunset.jpeg";
-	music.pause();
+	playMusic()
 }
 function enlargeImg2() {
 	modal.style.display = "block";
 	modalImg.src = "images/santa.jpg";
-	music.pause();
+	playMusic()
 }
 function enlargeImg3() {
 	modal.style.display = "block";
 	modalImg.src = "images/camera.jpg";
-	music.pause();
+	playMusic()
 }
 function enlargeImg4() {
 	modal.style.display = "block";
